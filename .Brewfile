@@ -11,14 +11,10 @@ mas "Slack", id: 803453959
 
 cask "alfred"
 cask "karabiner-elements"
-cask "arc"
+cask "google-chrome"
 cask "zoom"
 cask "messenger"
-cask "chatgpt"
 cask "1Password"
-cask "xmind"
-cask "ultimaker-cura"
 cask "bambu-studio"
-cask "visual-studio-code"
 cask "docker"
 
