@@ -1,5 +1,4 @@
 cask_args appdir: "/Applications"
-tap "homebrew/bundle"
 
 brew "git"
 brew "mas"
@@ -22,3 +21,4 @@ cask "ultimaker-cura"
 cask "bambu-studio"
 cask "visual-studio-code"
 cask "docker"
+
