@@ -31,7 +31,6 @@ setopt list_packed
 # 補完候補表示時などにピッピとビープ音をならないように設定
 setopt nolistbeep
 
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # 環境変数読み込み
