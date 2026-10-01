@@ -1,5 +1,3 @@
-
-
 # 補完機能
 autoload -U compinit
 compinit
@@ -28,8 +26,47 @@ setopt auto_pushd
 setopt correct
 
 # 補完候補を詰めて表示する
-setopt list_packed 
+setopt list_packed
 
 # 補完候補表示時などにピッピとビープ音をならないように設定
 setopt nolistbeep
 
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# 環境変数読み込み
+[ -f ~/.env ] && source ~/.env
+
+alias claude-local='ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_BASE_URL=http://<LOCAL_LLM_HOST>:11434 claude --model qwen3.6:256k'
+
+# <VPN_NAME>接続 + SSH + claude起動
+chita() {
+  local VPN_NAME="<VPN_NAME>"
+
+  if ! scutil --nc status "$VPN_NAME" | grep -q "^Connected$"; then
+    echo "VPN接続中..."
+    scutil --nc start "$VPN_NAME"
+    local i=0
+    until scutil --nc status "$VPN_NAME" | grep -q "^Connected$"; do
+      sleep 1
+      ((i++))
+      if [ $i -gt 20 ]; then
+        echo "VPN接続失敗"
+        return 1
+      fi
+    done
+    echo "VPN接続完了"
+  fi
+
+  ssh chita
+}
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
