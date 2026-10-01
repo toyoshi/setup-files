@@ -31,10 +31,8 @@ brew "yt-dlp"
 
 # Mac App Store
 mas "Amazon Kindle", id: 302584613
-mas "Apowersoft Screenshot", id: 955324462
 mas "CotEditor", id: 1024640650
 mas "Developer", id: 640199958
-mas "Flow", id: 1423210932
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
 mas "Messenger", id: 1480068668
@@ -47,24 +45,18 @@ cask "1password"
 cask "alfred"
 cask "aquaskk"
 cask "bambu-studio"
-cask "capcut"
 cask "chatgpt"
 cask "claude"
 cask "cmd-eikana"
 cask "codex"
-cask "cursor"
 cask "docker-desktop"
 cask "flutter"
 cask "font-hackgen-nerd"
-cask "foxglove"
 cask "gcloud-cli"
 cask "ghostty"
 cask "google-chrome"
 cask "inkscape"
-cask "obsidian"
-cask "qlmarkdown"
 cask "superwhisper"
 cask "tailscale-app"
 cask "visual-studio-code"
-cask "xmind"
 cask "zoom"
