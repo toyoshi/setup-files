@@ -16,4 +16,4 @@ cd ~/dotfiles
 
 - `mas` のアプリは事前に App Store へサインインしておく
 - ⌘英かな は Homebrew 版が古く無効化されているため、[dominion525/cmd-eikana](https://github.com/dominion525/cmd-eikana/releases) から手動で入れる（`macos.sh` より前に）
-- `~/.env`（APIキー等）、`~/.ssh` はリポジトリに含めない。手動で移す
+- `~/.env`（APIキー等）、`~/.zshrc.local`（IP等の非公開設定）、`~/.ssh` はリポジトリに含めない。手動で移す

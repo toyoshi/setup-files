@@ -1,6 +1,7 @@
 cask_args appdir: "/Applications"
 
 tap "k1low/tap"
+tap "oven-sh/bun"
 
 # CLI
 brew "git"
@@ -8,6 +9,8 @@ brew "gh"
 brew "mas"
 brew "mise"
 brew "node"
+brew "oven-sh/bun/bun"
+brew "opencode"
 brew "uv"
 brew "tmux"
 brew "jq"
@@ -25,7 +28,6 @@ brew "librsvg"
 brew "poppler"
 brew "sox"
 brew "xorriso"
-brew "yt-dlp"
 
 # Mac App Store
 mas "Amazon Kindle", id: 302584613
@@ -45,6 +47,7 @@ cask "aquaskk"
 cask "bambu-studio"
 cask "chatgpt"
 cask "claude"
+cask "claude-code"
 cask "codex"
 cask "docker-desktop"
 cask "flutter"

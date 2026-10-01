@@ -17,3 +17,4 @@ link() {
 }
 link config/ghostty/config.ghostty "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
 link config/git/ignore "$HOME/.config/git/ignore"
+link config/mise/config.toml "$HOME/.config/mise/config.toml"
