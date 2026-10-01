@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────
+# フォント
+# ─────────────────────────────────────────────
+# HackGen Console NF = Hack + 源柔ゴシック + Nerd Font
+# 全角が半角のちょうど2倍幅なので、日本語が引き伸ばされず滲まない
+font-family = "HackGen Console NF"
+font-size = 14
+
+# 日本語のフォールバック時に幅計算がズレるのを防ぐ
+grapheme-width-method = unicode
+
+# 文字が細くて見づらいと感じたら有効化（macOS のストローク太らせ）
+# font-thicken = true
+# font-thicken-strength = 128
+
+# 行間を少し空けると日本語が読みやすい
+adjust-cell-height = 8%
+
+# ─────────────────────────────────────────────
+# 配色
+# ─────────────────────────────────────────────
+theme = "Catppuccin Mocha"
+
+# 前景色と背景色のコントラストの下限を強制する。
+# TUI アプリ（opencode 等）が背景と近い色を出しても潰れなくなる保険。
+# 1 = 無効。1.2〜3 くらいが実用範囲。
+minimum-contrast = 1.2
+
+# ─────────────────────────────────────────────
+# ウィンドウ
+# ─────────────────────────────────────────────
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+macos-titlebar-style = tabs
+
+# スクロールバック
+scrollback-limit = 100000
