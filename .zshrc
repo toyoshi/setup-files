@@ -41,13 +41,3 @@ eval "$(mise activate zsh)"
 
 # マシン固有・非公開の設定（IP等）はリポジトリに入れず ~/.zshrc.local に書く
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# opencode
-export PATH="$HOME/.opencode/bin:$PATH"

@@ -1,7 +1,6 @@
 cask_args appdir: "/Applications"
 
-tap "k1low/tap"
-tap "oven-sh/bun"
+tap "dominion525/tap"
 
 # CLI
 brew "git"
@@ -9,16 +8,13 @@ brew "gh"
 brew "mas"
 brew "mise"
 brew "node"
-brew "oven-sh/bun/bun"
 brew "opencode"
 brew "uv"
-brew "tmux"
 brew "jq"
 brew "cmake"
 brew "cocoapods"
-brew "railway"
 brew "herdr"
-brew "k1low/tap/mo"
+brew "xcodegen"
 
 # Media / Files
 brew "aria2"
@@ -35,7 +31,6 @@ mas "CotEditor", id: 1024640650
 mas "Developer", id: 640199958
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
-mas "Messenger", id: 1480068668
 mas "Slack", id: 803453959
 mas "Transporter", id: 1450874784
 mas "Xcode", id: 497799835
@@ -43,15 +38,13 @@ mas "Xcode", id: 497799835
 # Apps
 cask "1password"
 cask "alfred"
-cask "aquaskk"
 cask "bambu-studio"
 cask "chatgpt"
 cask "claude"
 cask "claude-code"
+cask "dominion525/tap/cmd-eikana"
 cask "codex"
 cask "docker-desktop"
-cask "flutter"
-cask "font-hackgen-nerd"
 cask "gcloud-cli"
 cask "ghostty"
 cask "google-chrome"

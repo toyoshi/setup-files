@@ -4,10 +4,6 @@
 <dict>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
-	<key>SUHasLaunchedBefore</key>
-	<true/>
-	<key>lastLaunchVersion</key>
-	<string>2.5.2</string>
 	<key>lunchAtStartup</key>
 	<integer>1</integer>
 	<key>mappings</key>
@@ -90,16 +86,16 @@
 			<key>input</key>
 			<dict>
 				<key>flags</key>
-				<integer>0</integer>
+				<integer>65792</integer>
 				<key>keyCode</key>
-				<integer>102</integer>
+				<integer>57</integer>
 			</dict>
 			<key>output</key>
 			<dict>
 				<key>flags</key>
-				<integer>0</integer>
+				<integer>65792</integer>
 				<key>keyCode</key>
-				<integer>0</integer>
+				<integer>51</integer>
 			</dict>
 		</dict>
 	</array>

@@ -1,13 +1,10 @@
 #!/bin/zsh
+set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-for dotfile in ${SCRIPT_DIR}/.??* ; do
-    [[ "$dotfile" == "${SCRIPT_DIR}/.git" ]] && continue
-    [[ "$dotfile" == "${SCRIPT_DIR}/.github" ]] && continue
-    [[ "$dotfile" == "${SCRIPT_DIR}/.DS_Store" ]] && continue
-
-    ln -fnsv "$dotfile" "$HOME"
+for dotfile in .Brewfile .gitconfig .vimrc .zprofile .zshrc; do
+    ln -fnsv "${SCRIPT_DIR}/${dotfile}" "$HOME/${dotfile}"
 done
 
 # アプリの設定ファイル
